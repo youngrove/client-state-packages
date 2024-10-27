@@ -1,6 +1,10 @@
-import NewTodo from "@/components/zustand/NewTodo";
-import TodoList from "@/components/zustand/TodoList";
+import NewTodoZ from "@/components/zustand/NewTodo";
+import NewTodoJ from "@/components/jotai/NewTodo";
+import TodoListZ from "@/components/zustand/TodoList";
+import TodoListJ from "@/components/jotai/TodoList";
 import Head from "next/head";
+import NewTodoAtom from "@/components/jotai/NewTodoAtom";
+import TodoAtomList from "@/components/jotai/TodoAtomList";
 
 export default function Home() {
   return (
@@ -13,8 +17,20 @@ export default function Home() {
       </Head>
       <main>
         <h3>Zustand</h3>
-        <NewTodo></NewTodo>
-        <TodoList></TodoList>
+        <NewTodoZ></NewTodoZ>
+        <TodoListZ></TodoListZ>
+        <br />
+        <br />
+        <br />
+        <h3>jotai</h3>
+        <NewTodoJ></NewTodoJ>
+        <TodoListJ></TodoListJ>
+        <br />
+        <br />
+        <br />
+        <h3>jotai (Atoms in Atom 패턴)</h3>
+        <NewTodoAtom></NewTodoAtom>
+        <TodoAtomList></TodoAtomList>
       </main>
     </>
   );
