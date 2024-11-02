@@ -5,6 +5,9 @@ import TodoListJ from "@/components/jotai/TodoList";
 import Head from "next/head";
 import NewTodoAtom from "@/components/jotai/NewTodoAtom";
 import TodoAtomList from "@/components/jotai/TodoAtomList";
+import NewTodoV from "@/components/valtio/NewTodo";
+import TodoListV from "@/components/valtio/TodoList";
+import TodoListOpt from "@/components/valtio/TodoListOpt";
 
 export default function Home() {
   return (
@@ -31,6 +34,17 @@ export default function Home() {
         <h3>jotai (Atoms in Atom 패턴)</h3>
         <NewTodoAtom></NewTodoAtom>
         <TodoAtomList></TodoAtomList>
+        <br />
+        <br />
+        <br />
+        <h3>valtio</h3>
+        <NewTodoV></NewTodoV>
+        <TodoListV></TodoListV>
+        <h3>valtio(optimize)</h3>
+        <TodoListOpt></TodoListOpt>
+        <br />
+        <br />
+        <br />
       </main>
     </>
   );
